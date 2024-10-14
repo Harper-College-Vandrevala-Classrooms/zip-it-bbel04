@@ -47,8 +47,6 @@ public class Zipper {
         ListTwo.add(5);
         ListTwo.add(7);
         ListTwo.add(9);
-        
-
 
         ArrayList<Integer> result = zip(ListOne, ListTwo);
         System.out.println(result);

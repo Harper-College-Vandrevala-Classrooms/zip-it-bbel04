@@ -18,7 +18,7 @@ public class ZipperTest {
   }
 
   @Test
-  void mergeIntegerListsWithThreeElements() {
+  void mergeIntegerListsWithThreeElements() { 
     ArrayList<Integer> ListOne = new ArrayList<>();
     ArrayList<Integer> ListTwo = new ArrayList<>();
 

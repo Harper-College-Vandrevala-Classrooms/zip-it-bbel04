@@ -6,16 +6,16 @@ public class Zipper {
     public static <T> ArrayList<T> zip(ArrayList<T> listOne, ArrayList<T> listTwo) {
         ArrayList<T> zippedArray = new ArrayList<>();
 
-        int minSize = Math.min(listOne.size(), listTwo.size());
+        int minSize = Math.min(listOne.size(), listTwo.size()); //determine list with least amount of elements
 
-        for (int i = 0; i < minSize; i++){
+        for (int i = 0; i < minSize; i++){ //zip list one and list two elements together
             zippedArray.add(listOne.get(i));
             zippedArray.add(listTwo.get(i));
         }
 
-        if (listOne.size() > minSize) {
+        if (listOne.size() > minSize) {   //if list one is bigger than list two
             for (int i = minSize; i < listOne.size(); i++){
-                zippedArray.add(listOne.get(i));
+                zippedArray.add(listOne.get(i)); //add rest of elements in longer list to end of zipped list
             }
         }
 

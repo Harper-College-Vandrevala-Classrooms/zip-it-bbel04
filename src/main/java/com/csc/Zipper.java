@@ -1,6 +1,8 @@
 package com.csc;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class Zipper {
     public static <T> ArrayList<T> zip(ArrayList<T> listOne, ArrayList<T> listTwo) {
@@ -50,6 +52,15 @@ public class Zipper {
 
         ArrayList<Integer> result = zip(ListOne, ListTwo);
         System.out.println(result);
+
+        Map hash = new Map();
+
+        List<String> colors = List.of("White", "Black", "Orange", "Pink");
+        List<Integer> nums = List.of(1, 3, 5, 7);
+
+        // This should create {"White" => 1, "Black" => 3, "Orange" => 5, "Pink" => 7}
+        HashMap<String, Integer> map = hash.hashmapify(colors, nums);
+        System.out.println(map);
     }
 
 }
